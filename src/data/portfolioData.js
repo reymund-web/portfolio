@@ -2,10 +2,9 @@ import {
   Code2, 
   Server, 
   Database, 
-  Cloud,
-  Mail,
-  Link
+  Cloud
 } from 'lucide-react'
+import { FaGithub, FaLinkedin, FaFacebookSquare, FaEnvelope } from 'react-icons/fa';
 
 export const personalInfo = {
   name: "Reymund Patrick Marin Monterola",
@@ -20,10 +19,10 @@ export const personalInfo = {
 }
 
 export const socialLinks = [
-  { name: "GitHub", url: "https://github.com/reymund-web", icon: Link },
-  { name: "LinkedIn", url: "www.linkedin.com/in/reymund-patrick-monterola-015815375", icon: Link },
-  { name: "Facebook", url: "https://www.facebook.com/reymund.patrick.monterola.2024/", icon: Link },
-  { name: "Email", url: "mailto:reymundpmonterola05@gmail.com", icon: Mail },
+  { name: "GitHub", url: "https://github.com/reymund-web", icon: FaGithub },
+  { name: "LinkedIn", url: "www.linkedin.com/in/reymund-patrick-monterola-015815375", icon: FaLinkedin },
+  { name: "Facebook", url: "https://www.facebook.com/reymund.patrick.monterola.2024/", icon: FaFacebookSquare },
+  { name: "Email", url: "mailto:reymundpmonterola05@gmail.com", icon: FaEnvelope },
 ]
 
 export const aboutStats = [

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Heart, ArrowUp, Code2 } from 'lucide-react'
 import { socialLinks, navLinks } from '../../data/portfolioData'
+import AvatarImage from '../../assets/images/Avatar.jpg'
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -27,8 +28,8 @@ export default function Footer() {
                 scrollToTop()
               }}
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 flex items-center justify-center text-white">
-                <Code2 className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-xl border-2 border-blue-500/30 overflow-hidden">
+                <img src={AvatarImage} alt="Logo" className="w-full object-cover" />
               </div>
               <span className="text-xl font-bold text-dark-900 dark:text-white">Reymund Patrick Marin Monterola</span>
             </motion.a>
