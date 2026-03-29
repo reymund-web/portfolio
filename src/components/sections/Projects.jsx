@@ -5,6 +5,7 @@ import { projects } from '../../data/portfolioData'
 import SectionHeading from '../ui/SectionHeading'
 import Button from '../ui/Button'
 import ProjectModal from '../ui/ProjectModal'
+import { FaGithub } from 'react-icons/fa';
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null)
@@ -169,11 +170,11 @@ export default function Projects() {
         >
           <Button
             as="a"
-            href="https://github.com/alexchen"
+            href="https://github.com/reymund-web"
             target="_blank"
             rel="noopener noreferrer"
             variant="outline"
-            icon={Code2}
+            icon={FaGithub}
           >
             View All on GitHub
           </Button>

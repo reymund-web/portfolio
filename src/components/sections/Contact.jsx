@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Send, Mail, MapPin, Clock, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 import { personalInfo, socialLinks } from '../../data/portfolioData'
 import SectionHeading from '../ui/SectionHeading'
 import Button from '../ui/Button'
+
+// Initialize EmailJS - Replace with your actual Public Key from EmailJS
+emailjs.init('8iolpPjnfBJRpD2q-')
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -34,15 +38,29 @@ export default function Contact() {
 
     setStatus('loading')
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    
-    // In production, replace with actual API call
-    setStatus('success')
-    setFormData({ name: '', email: '', subject: '', message: '' })
-    
-    // Reset status after 5 seconds
-    setTimeout(() => setStatus(null), 5000)
+    try {
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        'service_1alkmzz', // Replace with your EmailJS Service ID
+        'template_sajdm39', // Replace with your EmailJS Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject || 'New Contact Form Submission',
+          message: formData.message,
+        }
+      )
+      
+      setStatus('success')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+      
+      // Reset status after 5 seconds
+      setTimeout(() => setStatus(null), 5000)
+    } catch (error) {
+      console.error('Email send failed:', error)
+      setStatus('error')
+      setTimeout(() => setStatus(null), 5000)
+    }
   }
 
   const handleChange = (e) => {

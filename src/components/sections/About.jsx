@@ -96,7 +96,7 @@ export default function About() {
               </p>
               <p className="leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                or sharing knowledge through technical writing and mentoring aspiring developers.
+                or taking online courses.
               </p>
             </div>
 

@@ -14,13 +14,13 @@ export const personalInfo = {
   email: "reymundpmonterola05@gmail.com",
   location: "Bicol, Philippines",
   availability: "Open to opportunities",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/SoftwareEngineer_Monterola.pdf",
   profileImage: "/src/assets/images/Avatar.jpg"
 }
 
 export const socialLinks = [
   { name: "GitHub", url: "https://github.com/reymund-web", icon: FaGithub },
-  { name: "LinkedIn", url: "www.linkedin.com/in/reymund-patrick-monterola-015815375", icon: FaLinkedin },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/reymund-patrick-monterola-015815375", icon: FaLinkedin },
   { name: "Facebook", url: "https://www.facebook.com/reymund.patrick.monterola.2024/", icon: FaFacebookSquare },
   { name: "Email", url: "mailto:reymundpmonterola05@gmail.com", icon: FaEnvelope },
 ]
@@ -86,7 +86,7 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop",
     tags: ["Python", "TensorFlow", "CNN", "OpenCV", "Robotics"],
     category: "AI/ML",
-    github: "https://github.com/reymund/wheelchair-cnn",
+    github: "https://github.com/reymund-web/CNN-Based-Self-Driving-Wheelchair",
     demo: "",
     featured: true,
     highlights: [
@@ -100,18 +100,18 @@ export const projects = [
     id: 2,
     title: "Human Resource Information System",
     description: "A comprehensive HRIS platform for employee management, payroll processing, and HR analytics.",
-    longDescription: "Full-stack HR management system with modules for employee records, attendance tracking, payroll, and performance management. Built with modern web technologies for scalability and real-time data processing.",
+    longDescription: "Full-stack HR management system with modules for employee records, attendance tracking, payroll, and performance management.",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
-    tags: ["React", "Node.js", "PostgreSQL", "Express", "JWT"],
+    tags: ["Jframe", "Java", "MySQL", "XAMPP"],
     category: "Full Stack",
-    github: "https://github.com/reymund/hris-system",
+    github: "https://github.com/pitzzahh/hris",
     demo: "",
     featured: true,
     highlights: [
       "Employee management",
       "Payroll automation",
       "Attendance tracking",
-      "HR analytics dashboard"
+      "Adding and updating records"
     ]
   },
   {
@@ -120,43 +120,43 @@ export const projects = [
     description: "A web-based ordering and inventory management system for restaurant operations.",
     longDescription: "Full-stack ordering platform enabling customers to place orders online and restaurant staff to manage inventory, orders, and deliveries efficiently.",
     image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&h=500&fit=crop",
-    tags: ["React", "Java", "MySQL", "REST API", "Payment Integration"],
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     category: "Full Stack",
     github: "https://github.com/reymund/ijjer-ordering",
     demo: "",
     featured: true,
     highlights: [
-      "Online ordering",
+      "POS ordering system",
       "Inventory management",
       "Order tracking",
-      "Payment processing"
+      "Dashboard analytics"
     ]
   },
   {
     id: 4,
     title: "Job Application Tracker",
-    description: "An AI-powered application that automates job search and application tracking with intelligent notifications.",
-    longDescription: "Automates the job application process by scraping job listings, filling applications, and tracking status. Integrates with email and messaging systems for real-time updates.",
+    description: "An AI-powered application that automates job application tracking with intelligent notifications.",
+    longDescription: "Automates the adding and updating of job application records. Integrates with email and messaging systems for real-time updates.",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
-    tags: ["Python", "n8n", "AI Automation", "Web Scraping"],
+    tags: ["JavaScript", "n8n", "AI Automation", "Gmail API", "Airtable", "Telegram API"],
     category: "AI Automation",
     github: "https://github.com/reymund/job-tracker",
     demo: "",
     featured: false,
     highlights: [
-      "Job scraping automation",
-      "Application auto-filling",
-      "Status tracking",
-      "AI-powered notifications"
+      "AI-Powered Job Identification in Gmail",
+      "Airtable Integration for Job Tracking",
+      "Telegram Notifications for Job Updates",
+      "Update and Add Records"
     ]
   },
   {
     id: 5,
     title: "Email Updates Through Telegram",
     description: "An automation system that forwards important emails to Telegram with intelligent filtering and summarization.",
-    longDescription: "Uses n8n and Python to monitor email accounts, filter important messages, and send summaries to Telegram. Supports multiple email providers and custom filtering rules.",
+    longDescription: "Uses n8n and JavaScript to monitor email accounts, filter important messages, and send summaries to Telegram. Supports multiple email providers and custom filtering rules.",
     image: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&h=500&fit=crop",
-    tags: ["Python", "n8n", "Telegram API", "Email Integration"],
+    tags: ["JavaScript", "n8n", "Gmail API", "Telegram API", "AI Summarization"],
     category: "AI Automation",
     github: "https://github.com/reymund/email-telegram",
     demo: "",
@@ -173,13 +173,13 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    role: "Technical Support Specialist",
+    role: "Technical Support Specialist (Intern)",
     company: "Armlink Computer Center Inc.",
-    companyUrl: "https://armlink.example.com",
-    location: "Bicol, Philippines",
+    companyUrl: "https://www.armlinkcci.com/",
+    location: "Laguna, Philippines",
     type: "Full-time",
-    startDate: "2021-01",
-    endDate: "Present",
+    startDate: "2024-04",
+    endDate: "2025-05",
     description: "Providing technical support and IT solutions for computer systems and networking. Assisting in system troubleshooting and maintenance.",
     achievements: [
       "Resolved 100+ technical support tickets",

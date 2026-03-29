@@ -1,5 +1,6 @@
 import { personalInfo } from '../../data/portfolioData'
 import AvatarImage from '../../assets/images/Avatar.jpg'
+import { Download } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -15,6 +16,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#projects" className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">View My Work</a>
               <a href="#contact" className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 dark:hover:bg-gray-800 transition">Get in Touch</a>
+              <a href={personalInfo.resumeUrl} download className="px-8 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition flex items-center justify-center gap-2"><Download className="w-5 h-5" />Resume</a>
             </div>
           </div>
           <div className="hidden lg:flex items-center justify-center">

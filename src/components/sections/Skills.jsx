@@ -104,7 +104,7 @@ export default function Skills() {
             Also experienced with
           </p>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Webpack', 'Vite', 'Jest', 'Cypress', 'Storybook', 'Figma', 'Jira', 'Notion'].map((tech) => (
+            {['Cisco Packet Tracer', 'Figma', 'Arduino', 'Word', 'Excel', 'Sheets', 'Sophos'].map((tech) => (
               <span
                 key={tech}
                 className="px-4 py-2 text-sm font-medium text-dark-600 dark:text-dark-400 bg-white dark:bg-dark-800 border border-dark-200 dark:border-dark-700 rounded-full hover:border-primary-300 dark:hover:border-primary-700 transition-colors"
